@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Invalid inputs</title>
+    </head>
+    <body>
+        <h4>You have reached an error page</h4>
+        <br>
+        <!-- Tells the user what the login error was -->
+        <p>Error: {{ why_bad }}</p>
+        <hr>
+        <!-- Returns to ./ -->
+        <form action="/logout" method="POST">
+            <input type="submit" value="Return to homepage"/>
+        </form>
+    </body>
+</html>
